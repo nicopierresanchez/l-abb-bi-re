@@ -85,32 +85,34 @@ footer {
     color: white;
     display: flex;
     flex-direction: row;
-    align-content: space-between;
 
+    justify-content: space-between;
 }
 
 .logoGithub {
-    max-width: 4%;
+    max-width: 40px;
     height: auto;
-    position: fixed;
+    position: absolute;
+    padding-top: 5px;
 }
 .copyright{
-   padding-left: 55%;
-   padding-right: 5%; 
+   /*! padding-left: 55%; */
+   /*! padding-right: 5%; */ 
 }
 
 .github {
-    list-style: none;
     display: flex;
-
-    padding-left: 10%;
-    
+    padding-left: 13%;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
 }
 
 .gitName {
     padding-right: 20px;
     
 }
+
 #welcome {
     font-size: medium;
     font-display: center;
@@ -123,6 +125,7 @@ footer {
 }
 #presentation img {
     width: 100%;
+    max-width: -moz-fit-content;
 }
 h1 {
     display: table;
