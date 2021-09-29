@@ -1,0 +1,33 @@
+/*  style footer  */
+
+
+footer {
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+
+}
+
+.logoGithub {
+    max-width: 4%;
+    height: auto;
+    position: fixed;
+}
+.copyright{
+   padding-left: 55%;
+   padding-right: 5%; 
+}
+
+.github {
+    list-style: none;
+    display: flex;
+
+    padding-left: 10%;
+    
+}
+
+.gitName {
+    padding-right: 20px;
+    
+}
