@@ -1,0 +1,144 @@
+
+
+#carte > iframe:nth-child(1) {
+    width: 100%;
+  }
+  
+  
+.bar_la_loupiote > img:nth-child(1) {
+    width: 30%;
+  }
+  
+ 
+  
+.bar_la_loupiote {
+    display: flex;
+  }
+  
+
+
+#exemples div {
+    display: flex;
+    flex-direction: row;
+  }
+
+#exemple div img {
+    width: 20%;
+}
+
+
+
+#exemples > div:nth-child(1) > img:nth-child(1) {
+  width: 40%;
+  height: 30%;
+}
+
+
+
+#exemples > div:nth-child(2) > img:nth-child(1) {
+  width: 25%;
+}
+
+
+#exemples {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#exemples div {
+
+  flex-direction: row;
+}
+
+
+
+#exemples > div:nth-child(1) > div:nth-child(2) > h3:nth-child(2) {
+  font-size: small;
+}
+
+  
+
+  
+
+  
+div.bar_la_loupiote:nth-child(1) > div:nth-child(2) > h3:nth-child(2) {
+    font-size: small;
+  }
+  
+
+
+
+#exemples div {
+
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+#details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: ;
+}
+
+
+
+#exemples > div:nth-child(1) {
+  border: 2px solid black ;
+  margin: 2px;
+}
+
+
+#exemples > div:nth-child(1) {
+
+  border: 0.5px solid black;
+  margin-block: 2px;
+}
+
+
+#exemples div {
+  justify-content: flex;
+}
+
+
+
+#details > h3:nth-child(2) {
+  text-align: center;
+  margin-top: auto;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+#details {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+#details > h2:nth-child(1) {
+  text-align: center;
+}
+
+
+body {
+  
+  background: rgb(253,187,45);
+  background: radial-gradient(circle, rgba(253,187,45,1) 0%, rgba(191,73,1,1) 59%);
+  background: rgb(191,73,1);background: linear-gradient(180deg, rgba(191,73,1,1) 0%, rgba(253,187,45,1) 100%);;
+}
+
+
+
+#exemples > div:nth-child(1) {
+  background-color: white;
+}
