@@ -166,3 +166,8 @@ footer ul li a {
 footer div {
     margin : 5%;
     color: white;
+}
+
+.highlight {
+  background:yellow; border:2px inset grey;
+}
