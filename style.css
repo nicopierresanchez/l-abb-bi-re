@@ -3,6 +3,11 @@
     font-display: center;
 
 }
+#nom_du_bar {
+    font-size: medium;
+    font-display: center;
+
+}
 #presentation img {
     width: 100%;
 }
