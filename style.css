@@ -96,7 +96,6 @@
         color: white;
     }
     main{
-        background: rgb(253,187,45);
         background: radial-gradient(circle, gray 0%, black 59%); 
     }    
     #welcome {

@@ -52,6 +52,7 @@ div h3 {
 body {
   margin: 0;
   padding: 0;
+  background: radial-gradient(circle, gray 0%, black 59%);
 }
 
 #details {
