@@ -101,12 +101,10 @@
     }    
     #welcome {
         display: flex;
-        font-size: medium;
+        font-size: large;
         justify-content: center;
         text-align: center;
-    
         color: white;
-        font-size: 0.8rem;
     
     }
     
@@ -115,22 +113,27 @@
         max-width: -moz-fit-content;
     }
     
-    #presentation {
+    #presentation h2{
         color: black;
         padding: 1rem;
         text-shadow: 0.2em 0.2em 0.5em white, -0.1em -0.1em 0.5em white, 0.1em 0.1em 0.5em white;
+        font-size: x-large;
+        text-align: center;
     
     }
     #presentation p{
         text-align:justify;
+        padding: 1rem;       
         text-shadow: 0.1em 0.1em 0.5em #000, -0.1em -0.1em 0.5em #000;
         color: white;
+        font-size: large;
         
     }
     h1 {
-        color: black;
+        color: white;
         padding: 1rem;
-        text-shadow: 0.2em 0.2em 0.5em white, -0.1em -0.1em 0.5em white, 0.1em 0.1em 0.5em white;    }
+        font-size: xx-large;    
+}
     h2{
         font-size: 1rem;
     }
