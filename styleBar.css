@@ -1,13 +1,52 @@
+h1 {
+    text-align: center;
+}
 
-    body {
-        margin: 0%;
-        padding : 0%;
-        background-color: black;
-        font-family: apple chancery, cursive;
-    }
-    
-    /* style header*/
-    nav 
+#slider {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    position: absolute;
+    font-size: 15vw;
+    color: rgba(218, 189, 189, 0.8);
+    padding: 10px;
+}
+
+
+
+#suivant {
+    right: 0px;
+    left: 80vw;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+    opacity: 1;
+}
+
+#slide {
+    width: 70vw;
+    height: auto;
+    margin-left: 14vw;
+    margin-right: 15vw;
+}
+
+body {
+    margin: 0%;
+    padding : 0%;
+    background-color: black;
+    font-family: apple chancery, cursive;
+}
+
+nav 
     {
         background: gray;
         display: flex;
@@ -15,18 +54,19 @@
         width: 100%;
         height: 5rem;
         border-bottom: solid 2px white;
-        align-items: center;
     }
     nav img{
         height: 5rem;
         width: 7rem;
-        margin : auto;
+        margin: auto;
+        margin-right: 20%;
+        padding: 0%;
     } 
     nav ul 
     {
         margin-top: 5rem;
         padding-left: 0%;
-        width: 100%;
+        width: 100vw;
         justify-content: space-around;
         position: absolute;
         align-items: center;   
@@ -57,20 +97,18 @@
     label 
     {
         width: 3rem;
+        display: flex;
+        justify-content: center;
         font-size: 3rem;
         color: black;
         cursor: pointer;
-        position: absolute;
-        margin-left: 1rem;
     }
     #toggle:checked + .burger_menu{
         display: flex;
 
 
-    } 
-    @media  screen and (min-width: 744px) {
-           
-    }   
+    }  
+
     footer {
         border-top: 2px solid white;
         background-color: gray;
@@ -102,6 +140,7 @@
     }    
     #welcome {
         display: flex;
+        font-size: large;
         justify-content: center;
         text-align: center;
         color: white;
@@ -117,7 +156,7 @@
         color: black;
         padding: 1rem;
         text-shadow: 0.2em 0.2em 0.5em white, -0.1em -0.1em 0.5em white, 0.1em 0.1em 0.5em white;
-        font-size: 2rem;
+        font-size: x-large;
         text-align: center;
     
     }
@@ -130,9 +169,18 @@
         
     }
     h1 {
-        color:white;
+        color: white;
         padding: 1rem;
-        font-size: 1.8rem;
-        text-shadow: 0.2em 0.2em 0.5em white, -0.1em -0.1em 0.5em white, 0.1em 0.1em 0.5em white;
-    
+        font-size: xx-large;    
 }
+    h2{
+        font-size: 1rem;
+    }
+    
+    p{
+        text-align:justify;
+        padding: 1rem;       
+        text-shadow: 0.1em 0.1em 0.5em #000, -0.1em -0.1em 0.5em #000;
+        color: white;
+        font-size: large;
+    }
