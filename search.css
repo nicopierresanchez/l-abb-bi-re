@@ -1,10 +1,15 @@
 
+#title {
+  color: white;
+}
+
 
 #carte > iframe:nth-child(1) {
     width: 100%;
     padding: 0;
   }
-input {
+
+  input {
   width: 200px;
   margin: auto;
   display: block;
@@ -61,9 +66,8 @@ body {
 
 body {
   
-  background: rgb(253,187,45);
-  background: radial-gradient(circle, rgba(253,187,45,1) 0%, rgba(191,73,1,1) 59%);
-  background: rgb(191,73,1);background: linear-gradient(180deg, rgba(191,73,1,1) 0%, rgba(253,187,45,1) 100%);;
+  background :black;
+  
 }
 
 #details .button {
@@ -167,7 +171,6 @@ footer div {
     margin : 5%;
     color: white;
 }
-
-.highlight {
+.highlight{
   background:yellow; border:2px inset grey;
 }
