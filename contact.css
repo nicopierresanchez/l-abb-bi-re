@@ -2,7 +2,6 @@ body {
     margin: 0%;
     padding : 0%;
     background-color: black;
-    font-family: apple chancery, cursive;
     color: white;
 }
 
@@ -48,6 +47,8 @@ nav ul li a
     text-decoration: none;
     color: white;
     margin: 0 auto;
+    font-family: apple chancery, cursive;
+
 }
 
 #toggle
@@ -75,6 +76,8 @@ footer {
     display: flex;
     align-items: center;
     height: 7rem;
+    font-family: apple chancery, cursive;
+
 }
 
 .logoGithub {
@@ -96,11 +99,16 @@ footer div {
     color: white;
 }
 
-
+h1{
+    font-family: apple chancery, cursive;
+    font-size: 1.8rem;
+}
 
 #contact {
     display: grid;
     color: white;
+    font-family: apple chancery, cursive;
+
   }
  
 /* Élément | file:///home/sanchez/project_1/l-abb-bi-re/contact.html */
@@ -108,7 +116,6 @@ footer div {
 body > main:nth-child(2) {
     display: flex;
     flex-direction: column;
-    align-content: ;
     align-items: center;
   }
   
@@ -116,6 +123,8 @@ body > main:nth-child(2) {
   
   #contactForm > label:nth-child(1) {
     color: white;
+    font-family: apple chancery, cursive;
+
     font-size: inherit;
     margin-top: 20px;
   }
@@ -124,6 +133,8 @@ body > main:nth-child(2) {
   
   #contactForm > label:nth-child(5) {
     color: white;
+    font-family: apple chancery, cursive;
+
     font-size: inherit;
     margin-top: 20px;
   }
@@ -132,6 +143,8 @@ body > main:nth-child(2) {
   
   #contactForm > label:nth-child(9) {
     color: white;
+    font-family: apple chancery, cursive;
+
     font-size: inherit;
     margin-top: 20px;
   }
