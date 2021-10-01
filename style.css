@@ -3,10 +3,8 @@
         margin: 0%;
         padding : 0%;
         background-color: black;
-        font-family: apple chancery, cursive;
-    }
-    
-    /* style header*/
+        
+    }/* style header*/
     nav 
     {
         background: gray;
@@ -47,6 +45,7 @@
         height: 5rem;
         text-decoration: none;
         color: white;
+        font-family: apple chancery, cursive;
         margin: 0 auto;
     }
     
@@ -68,13 +67,14 @@
         display: flex;
 
 
-    }    
+    } 
     footer {
         border-top: 2px solid white;
         background-color: gray;
         display: flex;
         align-items: center;
         height: 7rem;
+        font-family: apple chancery, cursive;
     }
     
     .logoGithub {
@@ -96,6 +96,7 @@
         color: white;
     }
     main{
+        font-family: apple chancery, cursive;
         background: radial-gradient(circle, gray 0%, black 59%); 
     }    
     #welcome {
@@ -131,7 +132,8 @@
     h1 {
         color: white;
         padding: 1rem;
-        font-size: xx-large;    
+        font-size: 1.8rem;
+        text-shadow: 0.2em 0.2em 0.5em white, -0.1em -0.1em 0.5em white, 0.1em 0.1em 0.5em white;    
 }
     h2{
         font-size: 1rem;

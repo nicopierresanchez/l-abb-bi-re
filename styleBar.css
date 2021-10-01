@@ -3,7 +3,8 @@ h1 {
 }
 
 #slider {
-    width: 1200px;
+    width: 100%;
+    height: auto;
     margin: auto;
     display: flex;
     align-items: center;
@@ -18,6 +19,8 @@ h1 {
     font-size: 15vw;
     color: rgba(218, 189, 189, 0.8);
     padding: 10px;
+    font-family: apple chancery, cursive;
+
 }
 
 
@@ -42,9 +45,7 @@ h1 {
 body {
     margin: 0%;
     padding : 0%;
-    background-color: black;
-    font-family: apple chancery, cursive;
-}
+    background-color: black;}
 
 nav 
     {
@@ -86,6 +87,8 @@ nav
         height: 5rem;
         text-decoration: none;
         color: white;
+        font-family: apple chancery, cursive;
+
         margin: 0 auto;
     }
     
@@ -115,6 +118,7 @@ nav
         display: flex;
         align-items: center;
         height: 7rem;
+        font-family: apple chancery, cursive;
     }
     
     .logoGithub {
@@ -136,6 +140,8 @@ nav
         color: white;
     }
     main{
+        font-family: apple chancery, cursive;
+
         background: radial-gradient(circle, gray 0%, black 59%); 
     }    
     #welcome {

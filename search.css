@@ -53,6 +53,7 @@ body {
   margin: 0;
   padding: 0;
   background: radial-gradient(circle, gray 0%, black 59%);
+
 }
 
 #details {
@@ -69,12 +70,6 @@ body {
   text-align: center;
   font-size: xx-large;
   font-family: apple chancery, cursive;
-}
-
-body {
-  
-  background :black;
-  
 }
 
 #details .button {
@@ -186,6 +181,5 @@ footer div {
 
 
 #carte > iframe:nth-child(1) {
-  width: ;
   height: 350px;
 }
