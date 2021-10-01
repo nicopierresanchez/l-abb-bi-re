@@ -159,6 +159,8 @@ footer {
     display: flex;
     align-items: center;
     height: 7rem;
+    font-family: apple chancery, cursive;
+
 }
 
 .logoGithub {
