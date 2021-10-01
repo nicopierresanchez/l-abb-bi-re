@@ -133,6 +133,7 @@ nav ul li a
     font-family: Arial, sans-serif;
     color: white;
     margin: 0 auto;
+    font-family: apple chancery, cursive;
 }
 
 #toggle
@@ -186,6 +187,5 @@ footer div {
 
 
 #carte > iframe:nth-child(1) {
-  width: ;
   height: 350px;
 }
