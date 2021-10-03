@@ -9,3 +9,25 @@ function ChangeSlide(sens) {
         numero = 0;
     document.getElementById("slide").src = slide[numero];
 }
+
+
+const bouton = document.querySelector('#button');
+
+addEventListener('click', function donnerAvis() { 
+    
+    let newCommentaire = document.createElement("input");
+    newCommentaire.type = "text";
+    let newTxt = document.createTextNode("test !");  
+    newCommentaire.appendChild(newTxt);
+    let placement = document.querySelector('.avis');
+    let input = document.querySelector('#texte');
+    document.body.insertBefore(placement, input);
+})
+
+
+
+
+
+
+
+

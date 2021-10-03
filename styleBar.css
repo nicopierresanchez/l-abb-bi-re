@@ -190,3 +190,24 @@ nav
         color: white;
         font-size: large;
     }
+
+.avis {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1vh;
+}
+
+#button {
+    box-shadow: 3px 3px 9px rgb(161, 150, 150);
+    color: white;
+    background-color: gray ;
+    border: black;
+}
+
+#texte {
+    border-radius: 10px 100px / 120px;
+    box-shadow: 3px 3px 9px rgb(161, 150, 150);
+    color: white;
+    background-color: gray ;
+    border: black;
+}
