@@ -13,15 +13,14 @@ function ChangeSlide(sens) {
 
 const bouton = document.querySelector('#button');
 
-addEventListener('click', function donnerAvis() { 
+bouton.addEventListener('click', function () { 
     
-    let newCommentaire = document.createElement("input");
-    newCommentaire.type = "text";
-    let newTxt = document.createTextNode("test !");  
+    let newCommentaire = document.createElement("p");   
+    newCommentaire.className= "texte";
+    let newTxt = document.createTextNode("test !"); 
     newCommentaire.appendChild(newTxt);
-    let placement = document.querySelector('.avis');
-    let input = document.querySelector('#texte');
-    document.body.insertBefore(placement, input);
+    let commentaire = document.querySelector('#commValides');
+    commentaire.appendChild(newCommentaire);
 })
 
 

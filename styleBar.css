@@ -204,10 +204,14 @@ nav
     border: black;
 }
 
-#texte {
+.texte {
     border-radius: 10px 100px / 120px;
     box-shadow: 3px 3px 9px rgb(161, 150, 150);
     color: white;
     background-color: gray ;
     border: black;
+}
+
+@media screen (min-width: 1024px){
+    
 }
