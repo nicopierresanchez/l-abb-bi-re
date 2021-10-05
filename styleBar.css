@@ -193,8 +193,8 @@ nav
 
 .avis {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 1vh;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 #button {
@@ -204,13 +204,19 @@ nav
     border: black;
 }
 
-.texte {
+#texte {
     border-radius: 10px 100px / 120px;
     box-shadow: 3px 3px 9px rgb(161, 150, 150);
     color: white;
     background-color: gray ;
     border: black;
 }
+
+.ecriture {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media screen (min-width: 1024px){
     

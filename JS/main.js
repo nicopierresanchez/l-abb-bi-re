@@ -16,17 +16,12 @@ const bouton = document.querySelector('#button');
 bouton.addEventListener('click', function () { 
     
     let newCommentaire = document.createElement("p");   
-    newCommentaire.className= "texte";
-    let newTxt = document.createTextNode("test !"); 
-    newCommentaire.appendChild(newTxt);
+    newCommentaire.id= "styleCom";
     let commentaire = document.querySelector('#commValides');
     commentaire.appendChild(newCommentaire);
+    let txt = document.getElementById("texte").value;
+    document.getElementById("styleCom").innerHTML = txt;  
+    
 })
-
-
-
-
-
-
 
 
