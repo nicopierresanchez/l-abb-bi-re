@@ -83,7 +83,6 @@ body {
 }
 
 nav 
-
     {
       background-color: rgb(0, 0, 0);
         display: flex;
@@ -210,7 +209,6 @@ body {
     justify-content: space-around;
   }
 
-
   #exemples div #text {
     width: 500px;
     align-content: unsafe;
@@ -219,7 +217,7 @@ body {
   footer {
     justify-content: space-between;
     display: flex;
-
+    
 
       
       position:absolute;
@@ -281,8 +279,6 @@ body {
     animation: animate 400s linear infinite;
     z-index: 10;
     position: relative;
-
-
 }
 
   nav ul{
@@ -291,7 +287,6 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
-
 
 nav ul {
   margin-top:0;
@@ -303,14 +298,13 @@ nav ul {
   width: 100%;
   position:relative;
 
-
+}
 
 label {
   position: none;
   cursor:none;
   color: transparent;
 }
-
 nav img {
   margin: auto;
   margin-right: 41%;
@@ -338,4 +332,3 @@ nav img {
   
 
 }
-
