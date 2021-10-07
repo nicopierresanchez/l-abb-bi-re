@@ -24,46 +24,50 @@
     <main>
         <section>
             <h1>La Loupiote</h1>
-            <article>
+                <article class="structure">
                 
-
-                <div id="slider">
-                    <img src="/img/bar_la_loupiote/la_loupiote_1.png" alt="interieur du bar" id="slide">
-                    <div id="precedent" onclick="ChangeSlide(-1)"><</div>
-                    <div id="suivant" onclick="ChangeSlide(1)">></div>
-                </div>
-
-
-            </article>
-        
-            <article class="description">
-                <p>Petit bar discret par sa taille mais pas par la 
-                foule qui déborde dehors les soirs de folie. Un 
-                café sympa, connu pour sa pêche et sa créativité. 
-                Chaude ambiance avec quelques concerts (chansons 
-                françaises, rock alternatif, plus rarement jazz), 
-                expositions, café-théatre de temps en temps. Etudiants,
-                potes fidèles du quartier et âmes esseulées s'y côtoient
-                dans la bonne humeur. Le tout dans un décor de murs Toulousains 
-                en brique. Une petite loupiote à suivre, donc, dans la nuit 
-                toulousaine.</p>           
-            </article>           
-
-            <article class="avis">
-                <div id="commValides">
-                
-                </div>
-            </article>
-            <article class="ecriture">
-                
-                <textarea  id="texte" >
-
-                </textarea>
-                         
+                    <div id="slider">
+                        <img src="/img/bar_la_loupiote/la_loupiote_1.png" alt="interieur du bar" id="slide">
+                        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+                        <div id="suivant" onclick="ChangeSlide(1)">></div>
+                    </div>
+                    
+                    <div class="description">
+                        <p>Description :</p>
+                        <p>Petit bar discret par sa taille mais pas par la 
+                        foule qui déborde dehors les soirs de folie. Un 
+                        café sympa, connu pour sa pêche et sa créativité. 
+                        Chaude ambiance avec quelques concerts (chansons 
+                        françaises, rock alternatif, plus rarement jazz), 
+                        expositions, café-théatre de temps en temps. Etudiants,
+                        potes fidèles du quartier et âmes esseulées s'y côtoient
+                        dans la bonne humeur. Le tout dans un décor de murs Toulousains 
+                        en brique. Une petite loupiote à suivre, donc, dans la nuit 
+                        toulousaine.</p>
+                    </div>
+                    
+                </article>      
             
+            <h2>Les Avis et commentaires sur votre bar !</h2>
 
-                <button type="button" id="button">Donnez votre avis !</button>
-            </article>
+                <article class="avis">
+                    
+                    <ul id="commValides">
+                    
+                    </ul>
+
+                </article>
+                <article class="ecriture">
+                    
+                    <textarea  id="texte" >
+
+                    </textarea>
+                                           
+                    <button type="button" id="button">Donnez votre avis !</button>
+                    <audio id="son">
+                        <source src="son/Whatsapp-Message.mp3" type="audio/mp3" />
+                    </audio>
+                </article>
         </section>
         
     </main>

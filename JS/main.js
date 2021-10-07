@@ -13,15 +13,15 @@ function ChangeSlide(sens) {
 
 const bouton = document.querySelector('#button');
 
-bouton.addEventListener('click', function () { 
+bouton.addEventListener('click', function () {
     
-    let newCommentaire = document.createElement("p");   
-    newCommentaire.id= "styleCom";
+    let txt = document.querySelector("#texte").value;
+    let newCommentaire = document.createElement("li");   
+    newCommentaire.innerHTML = txt;
     let commentaire = document.querySelector('#commValides');
-    commentaire.appendChild(newCommentaire);
-    let txt = document.getElementById("texte").value;
-    document.getElementById("styleCom").innerHTML = txt;  
-    
+    commentaire.appendChild(newCommentaire);  
+    let ancienTxt = document.getElementById("texte").value = "";      
+
 })
 
 

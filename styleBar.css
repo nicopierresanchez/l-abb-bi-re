@@ -27,7 +27,7 @@ h1 {
 
 #suivant {
     right: 0px;
-    left: 80vw;
+    left: 83vw;
 }
 
 #slider:hover #precedent,
@@ -174,13 +174,15 @@ nav
         font-size: large;
         
     }
-    h1 {
+    h1, h2 {
         color: white;
         padding: 1rem;
         font-size: xx-large;    
 }
     h2{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+        border-top: 1px solid grey;
     }
     
     p{
@@ -194,30 +196,136 @@ nav
 .avis {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
 }
 
 #button {
-    box-shadow: 3px 3px 9px rgb(161, 150, 150);
+    font-size: 10px;
+    size: 16px;
+    box-shadow: 6px 6px 6px #480c06;
+    text-shadow: 12px 8px 1px #480c06;
     color: white;
-    background-color: gray ;
-    border: black;
+    background-color: #581f1a;
+    border-radius: 12px;
+    border-color: black;
+    height: 40px;
 }
 
+
+
 #texte {
-    border-radius: 10px 100px / 120px;
-    box-shadow: 3px 3px 9px rgb(161, 150, 150);
-    color: white;
-    background-color: gray ;
-    border: black;
+    border-radius: 8px;
+    width: 50%;
+    font-size: 1rem;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(196, 184, 137);
+    
 }
 
 .ecriture {
     display: flex;
-    justify-content: space-between;
-}
-
-
-@media screen (min-width: 1024px){
+    justify-content: space-around;
+    margin-bottom: 3vh;
     
 }
+
+#commValides li {
+    
+    color: blanchedalmond;
+    list-style: none;
+    background: #530a0a; 
+    width: 95%;
+    border-radius: 6px;
+    text-align: center;
+    height: 10vh;
+    width: 30vh;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+        
+    }
+#commValides ul {
+    display: inline-table;
+
+    }
+#son {
+    display: none;
+}
+
+
+
+
+@media only screen and (min-width: 800px){
+    h1{
+        font-size: 70px;
+        
+    }
+
+    .structure {
+        display: flex;
+        flex-direction:row-reverse;
+    }
+
+    #slider {
+        width: 100%;
+        height: auto;
+        padding-left: 10%;
+    }
+
+    #precedent, #suivant {
+        font-size: 8vh;
+    }
+
+    #precedent {
+        left: 40%;
+    }
+
+    #suivant {
+        left: 90%;
+    }
+
+    .description {
+        width: 40%;
+        margin-left: 2%;
+        background-image: url(/img/page.jpeg);
+        
+    }
+
+    #slide {
+        width: 85%;
+    }
+
+    p {
+        font-size: 24px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        text-shadow: none;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-left: 2%;
+    }
+
+    .avis {
+        height: auto;
+        width: auto;
+        align-items: flex-start;
+    }
+    #commValides li {
+        font-size: 1.5rem;
+        height: 15vh;
+        width: 40vh;
+        padding-top: 10%;
+        text-align: center;
+               
+    }
+    
+
+}
+
+
+
