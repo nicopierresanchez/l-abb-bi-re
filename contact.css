@@ -225,9 +225,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-nav ul {
   margin-top:0;
   width: 100%; 
   position: none;
