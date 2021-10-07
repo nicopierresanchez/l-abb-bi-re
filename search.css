@@ -1,86 +1,12 @@
-
-#title {
-  color: white;
-  font-family: apple chancery, cursive;
-  text-align: center;
-  font-size: large;
-}
-
-
-#carte > iframe:nth-child(1) {
-    width: 100%;
-    padding: 0;
-    height: 350px;
-  }
-
-  
-#exemples  div img {
-  max-width: 30%;
-  height: auto;
-}
-#exemples {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  
-}
-
-#exemples div h3 {
-  font-size: large;
-  font-family: apple chancery, cursive;
-}
-div h3 {
-    font-size: large;
-    font-family: apple chancery, cursive;
-  }
-
-#exemples div {
-
-  justify-content: flex;  
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: row;    
-  display: flex;
-  flex-direction: row;
-  margin: 2px;
-}
-
 body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle, gray 0%, black 59%);
-
+  background-image: url(img/nuit_search.jpg);
+  background-size: 100%;
 }
 
-#details {
-  display: flex;
-  flex-direction: column;  
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: rgb(230, 230, 230);
-  border: none;
-}
 
-#details h2  {
-  text-align: center;
-  font-size: xx-large;
-  font-family: apple chancery, cursive;
-}
-
-#details .button {
-    color: rgb(46, 45, 45);
-    text-align: center;
-    text-decoration: none;
-    display:flex ;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-
-}
-#exemples div #text{
-    display: inline-block;
-}
+/*header*/
 
 nav {
       background-color: rgb(0, 0, 0);
@@ -140,6 +66,87 @@ nav {
 
 
     } 
+/*fin header*/
+
+/*articles*/
+#title {
+  color: white;
+  font-family: apple chancery, cursive;
+  text-align: center;
+  font-size: large;
+}
+
+
+#carte > iframe:nth-child(1) {
+    width: 100%;
+    padding: 0;
+    height: 350px;
+  }
+
+
+#exemples  div img {
+  max-width: 30%;
+  height: auto;
+}
+#exemples {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+#exemples div h3 {
+  font-size: large;
+  font-family: apple chancery, cursive;
+}
+div h3 {
+    font-size: large;
+    font-family: apple chancery, cursive;
+  }
+
+#exemples div {
+
+  justify-content: flex;  
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;    
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+}
+
+#details {
+  display: flex;
+  flex-direction: column;  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  border: none;
+}
+
+#details h2  {
+  text-align: center;
+  font-size: xx-large;
+  font-family: apple chancery, cursive;
+}
+
+#details .button {
+    color: rgb(46, 45, 45);
+    text-align: center;
+    text-decoration: none;
+    display:flex ;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+#exemples div #text{
+    display: inline-block;
+}
+/*fin article*/
+
+/*footer*/
     footer {
         display: flex;
         align-items: center;
@@ -173,15 +180,13 @@ nav {
         margin : 5%;
         color: white;
     }
-body {
-  background-image: url(img/nuit_search.jpg);
-  background-size: 100%;
-}   
+    /*fin footer*/
+
 
 
 @media screen and (min-width: 600px) {
 
-  
+  /*articles*/
   #exemples {
 
   flex-direction: inherit;
@@ -206,32 +211,6 @@ body {
     align-content: unsafe;
   }
 
-  footer {
-    justify-content: space-between;
-    display: flex;
-    
-
-      
-      position:absolute;
-      
-      bottom:0;
-      
-      width:100%;
-      
-      
-      height:70px;
-      
-  }
-  .github {
-    display: contents;
-    
-  }
-
-  .logoGithub {
-
-    width: 60px;
-    margin-left: 20px;
-  }
 
 /* header */
 
@@ -302,25 +281,30 @@ nav img {
   margin-right: 41%;
   margin-left: 2%;
   }
- 
+  /*fin header*/
+
+
+ /*footer desktop*/
   footer {
-    justify-content: space-between;
+
     display: flex;
     background: none;
     border: none;
-      font-size: x-large;
-      position:absolute;
-      
-      bottom:0;
-      
-      width:100%;
-      
-
-      height:70px;
-      text-shadow: 1px 2px 15px black;
+    font-size: x-large;
+    bottom:0;
+    width:100%;
+    height:70px;
+    text-shadow: 1px 2px 15px black;
+    justify-content: space-between;
+    position:absolute;
+  }
+  .github {
+    display: contents;
   }
 
-  
-  
-
+  .logoGithub {
+    width: 60px;
+    margin-left: 20px;
+  }
+  /*fin footer desk*/
 }
