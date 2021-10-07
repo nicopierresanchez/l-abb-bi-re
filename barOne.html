@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleBar.css">
-    
+    <link rel="stylesheet" href="styleBar.css">  
     <title>La Loupiote</title>
 </head>
 <body>
     <header>
         <nav> 
-         <img src="img/logo.png" alt="logo">   
-         <label for="toggle">☰</label>
-         <input type="checkbox" id="toggle">
-         <ul class="burger_menu">
-             <li><a href="index.html" >Accueil</a></li>
-             <li><a href="search.html" >Où boire</a></li>
-             <li><a href="contact.html" >Contact</a></li>
-         </ul>
+            <img src="img/logo.png" alt="logo">   
+            <label for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+            <ul class="burger_menu">
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="search.html" >Où boire</a></li>
+                <li><a href="jeux.html" >Qui paye?</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
         </nav> 
      </header>
     <main>
         <section>
             <h1>La Loupiote</h1>
-                <article class="structure">
-                
+                <article class="structure">              
                     <div id="slider">
-                        <img src="/img/bar_la_loupiote/la_loupiote_1.png" alt="interieur du bar" id="slide">
-                        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
-                        <div id="suivant" onclick="ChangeSlide(1)">></div>
-                    </div>
-                    
+                    <img src="/img/bar_la_loupiote/la_loupiote_1.png" alt="interieur du bar" id="slide">
+                    <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+                    <div id="suivant" onclick="ChangeSlide(1)">></div>
+                    </div>                   
                     <div class="description">
                         <p>Description :</p>
                         <p>Petit bar discret par sa taille mais pas par la 
@@ -44,32 +42,21 @@
                         dans la bonne humeur. Le tout dans un décor de murs Toulousains 
                         en brique. Une petite loupiote à suivre, donc, dans la nuit 
                         toulousaine.</p>
-                    </div>
-                    
-                </article>      
-            
+                    </div>                   
+                </article>                  
             <h2>Les Avis et commentaires sur votre bar !</h2>
-
-                <article class="avis">
-                    
+                <article class="avis">                    
                     <ul id="commValides">
                     
                     </ul>
 
                 </article>
-                <article class="ecriture">
-                    
+                <article class="ecriture">                   
                     <textarea  id="texte" >
-
-                    </textarea>
-                                           
-                    <button type="button" id="button">Donnez votre avis !</button>
-                    <audio id="son">
-                        <source src="son/Whatsapp-Message.mp3" type="audio/mp3" />
-                    </audio>
+                    </textarea>                                          
+                    <button type="button" id="button">Donnez votre avis !</button>                    
                 </article>
-        </section>
-        
+        </section>       
     </main>
     <footer>
         <img class="logoGithub" src="img/logo_github.png" alt="logo de Github">
@@ -79,7 +66,7 @@
             <li class="gitName"><a href="https://github.com/Barthel31">Sylvain</a></li>
         </ul>
         <div class="copyright">
-            <p>Les devs du dimanche &copy; copyright 2021</p>
+        <p>Les devs du dimanche &copy; copyright 2021</p>
         </div>
     </footer>
     <script src="/JS/main.js"></script>
