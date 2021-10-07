@@ -1,0 +1,90 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="jeux.css">
+
+    <body>
+  </head>
+    <nav> 
+      <img src="img/logo.png" alt="logo">   
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+      <ul class="burger_menu">
+          <li><a href="index.html" >Accueil</a></li>
+          <li><a href="search.html" >Où boire</a></li>
+          <li><a href="jeux.html" >Qui paye?</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+      </ul>
+    </nav> 
+
+    <div id="main">
+        <h1>QUI PERD PAYE</h1>
+ 
+        <!-- Game Instructions -->
+        <strong>
+        <p id="ins"> Le jeu commence en appuyant simplement sur une case.<br><br>Le premier joueur commence avec
+            <b>X</b><br>et<br>Le deuxieme joueur suit avec <b>0</b>
+        </p> 
+      </strong>
+ 
+        <br><br>
+        <!-- 3*3 grid of Boxes -->
+        <input type="text" id="b1" onclick=
+            "myfunc_3(); myfunc();" readonly>
+ 
+        <input type="text" id="b2" onclick=
+            "myfunc_4(); myfunc();" readonly>
+ 
+        <input type="text" id="b3" onclick=
+            "myfunc_5(); myfunc();" readonly>
+        <br><br>
+ 
+        <input type="text" id="b4" onclick=
+            "myfunc_6(); myfunc();" readonly>
+             
+        <input type="text" id="b5" onclick=
+            "myfunc_7(); myfunc();" readonly>
+ 
+        <input type="text" id="b6" onclick=
+            "myfunc_8(); myfunc();" readonly>
+        <br><br>
+ 
+        <input type="text" id="b7" onclick=
+            "myfunc_9(); myfunc();" readonly>
+ 
+        <input type="text" id="b8" onclick=
+            "myfunc_10();myfunc();" readonly>
+ 
+        <input type="text" id="b9" onclick=
+            "myfunc_11();myfunc();" readonly>
+ 
+        <!-- Grid end here  -->
+        <br><br><br>
+        <!-- Button to reset game -->
+        <button id="but" onclick="myfunc_2()">
+            RESET
+        </button>
+ 
+        <br><br>
+        <!-- Space to show player turn -->
+        <p id="print"></p>
+ 
+  
+    </div>
+    <footer>
+      <img class="logoGithub" src="img/logo_github.png" alt="logo de Github">
+      <ul class = "github">
+          <li class="gitName"><a href= "https://github.com/Wambrat">Ryan</a></li>
+          <li class="gitName"><a href="https://github.com/nicopierresanchez">Nico</a></li>
+          <li class="gitName"><a href="https://github.com/Barthel31">Sylvain</a></li>
+      </ul>
+      <div class="copyright">
+          <p>Les devs du dimanche &copy; copyright 2021</p>
+      </div>
+  </footer>
+</body>
+ <script src="/jeux.js"></script>
+</html>

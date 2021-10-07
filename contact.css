@@ -1,103 +1,113 @@
 body {
     margin: 0%;
     padding : 0%;
-    background-color: black;
+
+    background-image:url(img/mur.jpg) ;
+
     color: white;
 }
 
 /* style header*/
 nav 
-{
-    background: gray;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 5rem;
-    border-bottom: solid 2px white;
-}
-nav img{
-    height: 5rem;
-    width: 7rem;
-    margin: auto;
-    margin-right: 20%;
-    padding: 0%;
-} 
-nav ul 
-{
-    margin-top: 5rem;
-    padding-left: 0%;
-    width: 100vw;
-    justify-content: space-around;
-    position: absolute;
-    align-items: center;   
-    display: none;
-    flex-direction: column;
-    background: rgb(191,73,1);
-    background: linear-gradient(180deg, black  0%, rgb(26, 25, 25) 100%);
-    height: 220px;
-    border-top: solid 2px white;
-    border-bottom: solid 2px white;
-}
-nav li{
-    list-style-type: none;
-}
-nav ul li a 
-{
-    height: 5rem;
-    text-decoration: none;
-    color: white;
-    margin: 0 auto;
-    font-family: apple chancery, cursive;
 
-}
-
-#toggle
-{
-    display: none;
-}
-
-label 
-{
-    width: 3rem;
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    color: black;
-    cursor: pointer;
-}
-#toggle:checked + .burger_menu{
-    display: flex;
+    {
+      background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 5rem;
+        margin: auto;
+    }
+    nav img{
+        height: 5rem;
+        width: 4rem;
+        margin-left: 43%;
+        padding: 0%;
+    } 
+    nav ul 
+    {
+        margin-top: 5rem;
+        padding-left: 0%;
+        width: 100vw;
+        justify-content: space-around;
+        position: absolute;
+        align-items: center;   
+        display: none;
+        flex-direction: column;
+        background: rgb(191,73,1);
+        background: linear-gradient(180deg, black  0%, rgb(26, 25, 25) 100%);
+        height: 220px;
+    }
+    nav li{
+        list-style-type: none;
+    }
+    nav ul li a 
+    {
+        height: 5rem;
+        text-decoration: none;
+        color: white;
+        font-family: apple chancery, cursive;
+        margin: 0 auto;
+    }
+    
+    #toggle
+    {
+        display: none;
+    }
+ 
+    label 
+    {
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        color: white;
+        cursor: pointer;
+    }
+    #toggle:checked + .burger_menu{
+        display: flex;
 
 
-}    
-footer {
-    border-top: 2px solid white;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    height: 7rem;
-    font-family: apple chancery, cursive;
+    } 
+    footer {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        font-family: apple chancery, cursive;
+        margin-top:25%;
+    
+    }
+    .github {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+   
+      }
 
-}
 
-.logoGithub {
-    max-width: 2rem;
-    height: 2rem;
-}
-footer ul li {
-    list-style-type: none;
-}
-footer ul li a {
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    color: white;
-    margin-top: 0.5em;
-}
-footer div {
-    margin : 5%;
-    color: white;
-}
+
+
+    
+    
+    .logoGithub {
+        max-width: 2rem;
+        height: 2rem;
+    }
+    footer ul li {
+        list-style-type: none;
+    }
+    footer ul li a {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        color: white;
+        margin-top: 0.5em;
+    }
+    footer div {
+        margin : 5%;
+        color: white;
+    }
 
 h1{
     font-family: apple chancery, cursive;
@@ -111,17 +121,21 @@ h1{
 
   }
  
-/* Élément | file:///home/sanchez/project_1/l-abb-bi-re/contact.html */
 
-body > main:nth-child(2) {
+
+
+body > main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image:url= "img/mur.jpg";
   }
   
-  /* Élément | file:///home/sanchez/project_1/l-abb-bi-re/contact.html */
+
   
-  #contactForm > label:nth-child(1) {
+  #contactForm > label {
+
+
     color: white;
     font-family: apple chancery, cursive;
 
@@ -129,9 +143,17 @@ body > main:nth-child(2) {
     margin-top: 20px;
   }
   
-  /* Élément | file:///home/sanchez/project_1/l-abb-bi-re/contact.html */
+
+    color: white;
+    font-family: apple chancery, cursive;
+
+    font-size: inherit;
+    margin-top: 20px;
+  }
+
+
   
-  #contactForm > label:nth-child(5) {
+
     color: white;
     font-family: apple chancery, cursive;
 
@@ -139,19 +161,142 @@ body > main:nth-child(2) {
     margin-top: 20px;
   }
   
-  /* Élément | file:///home/sanchez/project_1/l-abb-bi-re/contact.html */
-  
-  #contactForm > label:nth-child(9) {
-    color: white;
-    font-family: apple chancery, cursive;
 
-    font-size: inherit;
-    margin-top: 20px;
-  }
-  
-  /* Élément | file:///home/sanchez/project_1/l-abb-bi-re/contact.html */
-  
   #contactForm > input:nth-child(14) {
     margin-bottom: 80px;
   }
-   
+
+@media screen and (min-width: 600px)
+  {
+
+
+
+
+
+
+#contactForm {
+    width: 400px;
+  }
+  
+ 
+  
+
+    
+  footer {
+    justify-content: space-between;
+    display: flex;
+    background: none;
+    border: none;
+      font-size: x-large;
+      position:absolute;
+      
+      bottom:0;
+      
+      width:100%;
+      
+
+      height:70px;
+      text-shadow: 1px 2px 15px black;
+  }
+
+  
+  
+  .github {
+    display: contents;
+    
+  }
+  
+  
+  
+  .logoGithub {
+  
+    width: 100px;
+    margin-left: 20px;
+  }
+  
+  
+  #name {
+    width: 800px;
+  }
+ 
+  #contactForm input {
+    width: 20%;
+
+
+  }
+  #message {
+      width: -moz-available;
+    }
+
+
+  nav img {
+    width: 50px;
+
+  }
+  nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: xx-large;
+  background: none;
+  border: none;
+  position: relative;
+}
+
+  nav ul{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul {
+  margin-top:0;
+  width: 100%; 
+  position: none;
+  background:none;
+  height: 80px;
+  border:none; 
+  width: 100%;
+  position:relative;
+}
+
+label {
+  position: none;
+  cursor: none;
+  color: transparent;
+}
+
+/* Élément | http://127.0.0.1:5500/contact.html */
+
+body {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+nav img {
+  margin: auto;
+  margin-right: 41%;
+  margin-left: 2%;
+  }
+
+
+
+  #contactForm {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: x-large;
+  }
+  
+
+
+
+    #email {
+      width: auto;
+    }
+
+
+  }
