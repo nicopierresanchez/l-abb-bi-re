@@ -4,21 +4,23 @@
         padding : 0%;
         background-color: black;
         
-    }/* style header*/
+    }
+    /* style header*/
     nav 
     {
-        background: gray;
+
+    
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         width: 100%;
         height: 5rem;
-        border-bottom: solid 2px white;
+        margin: auto;
     }
     nav img{
         height: 5rem;
-        width: 7rem;
-        margin: auto;
-        margin-right: 20%;
+        width: 4rem;
+        margin-left: 43%;
         padding: 0%;
     } 
     nav ul 
@@ -34,8 +36,8 @@
         background: rgb(191,73,1);
         background: linear-gradient(180deg, black  0%, rgb(26, 25, 25) 100%);
         height: 220px;
-        border-top: solid 2px white;
-        border-bottom: solid 2px white;
+
+
     }
     nav li{
         list-style-type: none;
@@ -60,7 +62,9 @@
         display: flex;
         justify-content: center;
         font-size: 3rem;
-        color: black;
+
+        color: white;
+
         cursor: pointer;
     }
     #toggle:checked + .burger_menu{
@@ -70,7 +74,8 @@
     } 
     footer {
         border-top: 2px solid white;
-        background-color: gray;
+
+
         display: flex;
         align-items: center;
         height: 7rem;
@@ -86,8 +91,10 @@
     }
     footer ul li a {
         display: flex;
+
+        flex-direction:row;
         justify-content: space-around;
-        text-decoration: none;
+
         color: white;
         margin-top: 0.5em;
     }
@@ -140,5 +147,52 @@
     }
 
 
+    @media screen and (min-width: 600px) {
 
+
+
+        nav img {
+            width: 50px;
+            margin-left: 2%;
+            padding: 0%;
+          }
+          nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          font-size: xx-large;
+          background: none;
+          border: none;
+          position: relative;
+          top: 0;
+          z-index: 10;
+        }
+          nav ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        nav ul {
+          margin-top:0;
+          width: 100%; 
+          position: none;
+          background:none;
+          height: 80px;
+          border:none; 
+          width: 100%;
+          position:relative;
+        }
+        label {
+          position: none;
+          cursor: none;
+          color: transparent;
+        }
+        nav img {
+            margin: auto;
+            margin-right: 41%;
+            margin-left: 2%;
+            }
+          
+
+    }
 
