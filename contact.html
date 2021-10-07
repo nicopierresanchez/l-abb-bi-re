@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css">
+        <title>Où boire?</title>
+    </head>
+    <body>
+        <header>
+            <nav> 
+             <img src="img/logo.png" alt="logo">   
+             <label for="toggle">☰</label>
+             <input type="checkbox" id="toggle">
+             <ul class="burger_menu">
+                 <li><a href="index.html">Accueil</a></li>
+                 <li><a href="search.html">Où boire</a></li>
+                 <li><a href="jeux.html" >Qui paye?</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+             </ul>
+            </nav> 
+         </header>
+        <main>
+        <section id ="title">
+            <h1>
+            <strong>Contactez Nous !</strong>
+            </h1>
+
+        </section>
+        <section id="contact">
+            <form id="contactForm">
+              <label for="name">Nom Prenom:</label><br />
+              <input type="text" id="name" name="name" value="Jaime Labière" /><br />
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value="example@apero.com"
+              /><br />
+              <label for="message">Message:</label><br />
+              <textarea id="message" name="message"></textarea>
+              <br /><br />
+              <input type="submit" value="soumettre" />
+            </form>
+          </section>
+        </main>
+        
+        
+        
+        <footer>
+            <img class="logoGithub" src="img/logo_github.png" alt="logo de Github">
+            <ul class = "github">
+                <li class="gitName"><a href= "https://github.com/Wambrat">Ryan</a></li>
+                <li class="gitName"><a href="https://github.com/nicopierresanchez">Nico</a></li>
+                <li class="gitName"><a href="https://github.com/Barthel31">Sylvain</a></li>
+            </ul>
+            <div class="copyright">
+                <p>Les devs du dimanche &copy; copyright 2021</p>
+            </div>
+        </footer>
+        <script src="contact.js"></script>
+</body>
+</html>
