@@ -1,7 +1,91 @@
-h1 {
-    text-align: center;
+/* style header */
+nav {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    margin: auto;
 }
+nav img{
+    height: 5rem;
+    width: 4rem;
+    margin-left: 43%;
+    padding: 0%;
+} 
+nav ul 
+{
+    margin-top: 5rem;
+    padding-left: 0%;
+    width: 100vw;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;   
+    display: none;
+    flex-direction: column;
+    background: rgb(191,73,1);
+    background: linear-gradient(180deg, black  0%, rgb(26, 25, 25) 100%);
+    height: 220px;
+}
+nav li{
+    list-style-type: none;
+}
+nav ul li a {
+    height: 5rem;
+    text-decoration: none;
+    color: white;
+    font-family: apple chancery, cursive;
+    margin: 0 auto;
+} 
+#toggle{
+    display: none;
+}
+label {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+#toggle:checked + .burger_menu{
+    display: flex;
+} 
+/* style footer */ 
+footer {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    font-family: apple chancery, cursive;
+    margin-top:25%;
 
+}
+.github {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.logoGithub {
+    max-width: 2rem;
+    height: 2rem;
+}
+footer ul li {
+    list-style-type: none;
+}
+footer ul li a {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    color: white;
+    margin-top: 0.5em;
+}
+footer div {
+    margin : 5%;
+    color: white;
+}
+/* style carousel */
 #slider {
     width: 100%;
     height: auto;
@@ -9,7 +93,6 @@ h1 {
     display: flex;
     align-items: center;
 }
-
 #precedent,
 #suivant {
     cursor: pointer;
@@ -22,171 +105,270 @@ h1 {
     font-family: apple chancery, cursive;
 
 }
-
-
-
 #suivant {
     right: 0px;
-    left: 80vw;
+    left: 83vw;
 }
-
 #slider:hover #precedent,
 #slider:hover #suivant {
     opacity: 1;
 }
-
 #slide {
     width: 70vw;
     height: auto;
     margin-left: 14vw;
     margin-right: 15vw;
 }
-
+/* style body */
+main{
+    font-family: apple chancery, cursive;  
+} 
 body {
-    margin: 0%;
-    padding : 0%;
-    background-color: black;}
-
-nav 
-    {
-        background: gray;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 5rem;
-        border-bottom: solid 2px white;
-    }
-    nav img{
-        height: 5rem;
-        width: 7rem;
-        margin: auto;
-        margin-right: 20%;
-        padding: 0%;
-    } 
-    nav ul 
-    {
-        margin-top: 5rem;
-        padding-left: 0%;
-        width: 100vw;
-        justify-content: space-around;
-        position: absolute;
-        align-items: center;   
-        display: none;
-        flex-direction: column;
-        background: rgb(191,73,1);
-        background: linear-gradient(180deg, black  0%, rgb(26, 25, 25) 100%);
-        height: 220px;
-        border-top: solid 2px white;
-        border-bottom: solid 2px white;
-    }
-    nav li{
-        list-style-type: none;
-    }
-    nav ul li a 
-    {
-        height: 5rem;
-        text-decoration: none;
-        color: white;
-        font-family: apple chancery, cursive;
-
-        margin: 0 auto;
-    }
+    margin: 0;
+    padding: 0;
+    background-image: url(img/nuit_search.jpg);
+    background-size: 100%;
+}
+         
+#welcome {
+    display: flex;
+    font-size: large;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+#presentation img {
+    width: 100%;
+    max-width: -moz-fit-content;
+}
+#presentation h2{
+    color: black;
+    padding: 1rem;
+    text-shadow: 0.2em 0.2em 0.5em white, -0.1em -0.1em 0.5em white, 0.1em 0.1em 0.5em white;
+    font-size: x-large;
+    text-align: center;
+}
+#presentation p{
+    text-align:justify;
+    padding: 1rem;       
+    text-shadow: 0.1em 0.1em 0.5em #000, -0.1em -0.1em 0.5em #000;
+    color: white;
+    font-size: large;   
+}
+h1 {
+    text-align: center;
+}
+h1, h2 {
+    color: white;
+    padding: 1rem;
+    font-size: xx-large;    
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    border-top: 1px solid grey;
+}
+p{
+    text-align:justify;
+    padding: 1rem;       
+    text-shadow: 0.1em 0.1em 0.5em #000, -0.1em -0.1em 0.5em #000;
+    color: white;
+    font-size: large;
+}
+.avis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#button {
+    font-size: 10px;
+    size: 16px;
+    box-shadow: 6px 6px 6px #480c06;
+    text-shadow: 12px 8px 1px #480c06;
+    color: white;
+    background-color: #581f1a;
+    border-radius: 12px;
+    border-color: black;
+    height: 40px;
+}
+#texte {
+    border-radius: 8px;
+    width: 50%;
+    font-size: 1rem;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(196, 184, 137);
     
-    #toggle
-    {
-        display: none;
-    }
- 
-    label 
-    {
-        width: 3rem;
-        display: flex;
-        justify-content: center;
-        font-size: 3rem;
-        color: black;
-        cursor: pointer;
-    }
-    #toggle:checked + .burger_menu{
-        display: flex;
+}
+.ecriture {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3vh;
+    
+}
+#commValides li {   
+    color: blanchedalmond;
+    list-style: none;
+    background: #530a0a; 
+    width: 95%;
+    border-radius: 6px;
+    text-align: center;
+    height: 10vh;
+    width: 30vh;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    margin-top: 10px;        
+}
+#commValides ul {
+    display: inline-table;
 
-
+}
+@media only screen and (min-width: 800px){
+    
+    /* style nav desktop */
+    nav img {    
+    width: 50px;
+    margin-left: 2%;
+    }
+    nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: xx-large;
+    background: none;
+    border: none;
+    background: url(img/cloud.png);
+    animation: animate 400s linear infinite;
+    z-index: 10;
+    position: relative;
+    }
+    nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    nav ul {
+    margin-top:0;
+    width: 100%; 
+    position: none;
+    background:none;
+    height: 80px;
+    border:none; 
+    width: 100%;
+    position:relative;   
     }  
-
-    footer {
-        border-top: 2px solid white;
-        background-color: gray;
-        display: flex;
-        align-items: center;
-        height: 7rem;
-        font-family: apple chancery, cursive;
+    label {
+    position: none;
+    cursor:none;
+    color: transparent;
     }
-    
-    .logoGithub {
-        max-width: 2rem;
-        height: 2rem;
+    nav img {
+    margin: auto;
+    margin-right: 41%;
+    margin-left: 2%;
     }
-    footer ul li {
-        list-style-type: none;
-    }
-    footer ul li a {
-        display: flex;
-        justify-content: space-around;
-        text-decoration: none;
-        color: white;
-        margin-top: 0.5em;
-    }
-    footer div {
-        margin : 5%;
-        color: white;
-    }
-    main{
-        font-family: apple chancery, cursive;
-
-        background: radial-gradient(circle, gray 0%, black 59%); 
-    }    
-    #welcome {
-        display: flex;
-        font-size: large;
-        justify-content: center;
-        text-align: center;
-        color: white;
-    
-    }
-    
-    #presentation img {
-        width: 100%;
-        max-width: -moz-fit-content;
-    }
-    
-    #presentation h2{
-        color: black;
-        padding: 1rem;
-        text-shadow: 0.2em 0.2em 0.5em white, -0.1em -0.1em 0.5em white, 0.1em 0.1em 0.5em white;
-        font-size: x-large;
-        text-align: center;
-    
-    }
-    #presentation p{
-        text-align:justify;
-        padding: 1rem;       
-        text-shadow: 0.1em 0.1em 0.5em #000, -0.1em -0.1em 0.5em #000;
-        color: white;
-        font-size: large;
+    /* style body desktop */
+    h1{
+    font-size: 70px;
         
     }
-    h1 {
-        color: white;
-        padding: 1rem;
-        font-size: xx-large;    
-}
-    h2{
-        font-size: 1rem;
+    .structure {
+    display: flex;
+    flex-direction:row-reverse;
     }
+    /* style carousel desktop */
+    #slider {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    }
+    #precedent, #suivant {
+    font-size: 8vh;
+    }
+    #precedent {
+    left: 40%;
+    }
+    #suivant {
+    left: 90%;
+    }
+    .description {
+    width: 40%;
+    margin-left: 2%;
+    background-image: url(/img/page.jpeg);
+        
+    }
+    #slide {
+    width: 85%;
+    }
+    .description p {
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-shadow: none;
+    }
+    h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: 2%;
+    }
+    .avis {
+    height: auto;
+    width: auto;
+    align-items: flex-start;
+    }
+    #commValides li {
+    font-size: 1.5rem;
+    height: 15vh;
+    width: 40vh;
+    padding-top: 10%;
+    text-align: center;              
+    }
+    .background {
+    top: 0;
+    left: 0;
+    height: 183px;
+    width: 100%;   
+    }
+    .ecriture {
+    margin-top: 15%;
+    }   
+    @keyframes animate {
+    0% {
+    background-position: -200px;
+    }
+    100% {
+    background-position: 5440px;
+    }
+    }          
     
-    p{
-        text-align:justify;
-        padding: 1rem;       
-        text-shadow: 0.1em 0.1em 0.5em #000, -0.1em -0.1em 0.5em #000;
-        color: white;
-        font-size: large;
+    /* style footer desktop*/
+    footer {
+    display: flex;
+    background: none;
+    border: none;
+    font-size: x-large;
+    bottom:0;
+    width:100%;
+    height:70px;
+    text-shadow: 1px 2px 15px black;
+    justify-content: space-between;
+    position:static;
+    margin-top: 10%;
     }
+    .github {
+    display: contents;
+    }
+    .logoGithub {
+    width: 60px;
+    margin-left: 20px;
+    }
+    body {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    }    
+}
+
+
+
