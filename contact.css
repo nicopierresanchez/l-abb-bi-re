@@ -114,8 +114,13 @@ h1{
     font-family: apple chancery, cursive;
 
   }
+  #contactForm {
+    margin-bottom: 100px;
+   }
+   
+
 #contactForm input {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   width: 250px;
   }
 body  main {
