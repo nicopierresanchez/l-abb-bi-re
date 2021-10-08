@@ -64,7 +64,7 @@ footer {
 .github {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 .logoGithub {
