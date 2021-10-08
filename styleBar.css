@@ -308,7 +308,7 @@ p{
     width: 85%;
     }
     .description p {
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -376,6 +376,11 @@ p{
     background-size: 100% 200vh;
     background-repeat: no-repeat;
     }    
+
+    h1 {
+        font-size: 50px;
+    }
+
 }
 
 
