@@ -1,0 +1,579 @@
+nav {
+    background-color: rgb(0, 0, 0);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: 5rem;
+      margin: auto;
+  }
+  nav img{
+      height: 5rem;
+      width: 4rem;
+      margin-left: 43%;
+      padding: 0%;
+  } 
+  nav ul 
+  {
+      margin-top: 5rem;
+      padding-left: 0%;
+      width: 100%;
+      justify-content: space-around;
+      position: absolute;
+      z-index: 2;
+      align-items: center;   
+      display: none;
+      flex-direction: column;
+      background: rgb(191,73,1);
+      background: linear-gradient(180deg, black  0%, rgb(26, 25, 25) 100%);
+      height: 220px;
+  }
+  nav ul li{
+      list-style-type: none;
+  }
+  nav ul li a 
+  {
+      height: 5rem;
+      text-decoration: none;
+      color: white;
+      font-family: apple chancery, cursive;
+      margin: 0 auto;
+  }
+  
+  #toggle{
+      display: none;
+  }
+
+  label {
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      z-index: 2;
+      font-size: 3rem;
+      color: white;
+      cursor: pointer;
+  }
+  #toggle:checked + .burger_menu{
+      display: flex;
+  } 
+    @media screen and (min-width: 600px)
+  {
+    nav img {
+        width: 50px;
+        display: none;
+      }
+      nav {
+      width: 50%;        
+      display: flex;
+      flex-direction: row;
+      margin-left:48%;
+      justify-content: space-around;
+      font-size: xx-large;
+      background:none;
+      border: none;
+      position: absolute;
+      z-index: 3;
+    }
+    
+      nav ul{
+        background: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    nav ul {
+      margin-top:0;
+      width: 100%; 
+      height: 80px;
+      border:none;
+    }
+    
+    label {
+      display: none;
+      cursor: none;
+      color: transparent;
+    }
+}  
+
+/*body*/
+.twikkleStars,.twikkleStarsmobile {
+    width: 100%;
+}
+.lune {
+    display: flex;
+    position: absolute;
+     background: url(lune.jpg);
+     background-size: 440px;
+     background-position: -6em -0.5em;
+     width: 15rem;
+     height: 15rem;
+     border: 1px solid lightgray;
+     border-radius: 50%;
+}
+.twikkleStars .lune{
+
+     animation-name: animSun;
+     animation-duration:60s;
+     animation-timing-function: linear;
+     animation-delay: 0s;
+     animation-iteration-count: infinite;
+}
+img {
+    display: flex;
+    background: url(logo.png);
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;  
+}
+
+@keyframes animSun {
+    0%{
+        transform: translate(38vw, 20vh);
+        box-shadow: 0em 0em 20px 0.1em white ;
+    }
+    25%{
+        transform: translate(73vw, 20vh);
+        box-shadow: 0em 0em 20px 0.3em white ;
+    }    
+    50%{
+        transform: translate(38vw, 20vh);
+        box-shadow: 0em 0em 20px 0.1em white ;
+    }
+    75%{
+        transform: translate(0vw, 20vh);
+        box-shadow: 0em 0em 20px 0.3em white ;
+    }
+    100%{
+        transform: translate(38vw, 20vh);
+        box-shadow: 0em 0em 20px 0.1em white ;
+    }
+}
+.stars, .twinkl {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:75%;
+    display:block;
+    }
+.stars {
+    background:#000 url("https://s3.bmp.ovh/imgs/2021/09/3760b5e2cc46f556.png") repeat top center;
+    z-index:0;
+    }
+.twinkl{
+    background:transparent url("https://s3.bmp.ovh/imgs/2021/09/68c03ba1cf80ca8b.png") repeat top center;
+    z-index:0;
+    animation:move-twink-back 300s linear infinite;
+    }
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+    }
+#bubble{
+    display: flex;
+    align-items: center;       
+    position: absolute;
+    background-color:white;
+    text-align: center;
+    width:15%;
+    height:15%;
+    border:2px solid #555555;
+    /* ... */
+    /* propriété CSS3 (fonctionne sous Opera) */
+    border-top-right-radius:80px 40px;
+    border-top-left-radius:80px 40px;
+    border-bottom-right-radius:80px 40px;
+    border-bottom-left-radius:80px 40px;
+    /* implémentation Firefox */
+    -moz-border-radius-topright:80px 40px;
+    -moz-border-radius-topleft:80px 40px;
+    -moz-border-radius-bottomright:80px 40px;
+    -moz-border-radius-bottomleft:80px 40px;
+    /* implémentation Chrome, Safari, ... */
+    -webkit-border-top-right-radius:80px 40px;
+    -webkit-border-top-left-radius:80px 40px;
+    -webkit-border-bottom-right-radius:80px 40px;
+    -webkit-border-bottom-left-radius:80px 40px;
+    animation-name: animBulle;
+    animation-duration:60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+
+}
+@keyframes animBulle {
+    0%{
+        transform: translate(36vw, 12vh);
+    }
+    25%{
+        transform: translate(74vw, 12vh);
+    }    
+    50%{
+        transform: translate(36vw, 12vh);
+    }
+    75%{
+        transform: translate(-2vw, 12vh);
+    }
+    100%{
+        transform: translate(36vw, 12vh);
+    }
+}    
+#arrow_border{
+    width:0;
+    height:0;
+    line-height:0;
+    border-bottom:30px solid transparent;
+    border-left:30px solid transparent;
+    border-right:30px solid #555555; /* couleur de la bordure de la bulle */
+    }
+#arrow_inner{
+    width:0;
+    height:0;
+    line-height:0;
+    border-bottom:30px solid transparent;
+    border-left:30px solid transparent;
+    border-right:30px solid white; /* couleur du fond de la bulle */
+    }
+#arrow_border{
+    /* ... */
+    position:absolute;
+    bottom:-30px;
+    right:65px;
+    }
+    /*
+    08.
+    *  le span qui va se superposer doit être légèrement décalé pour laisser donner l'impression d'une bordure
+    09.
+    */
+#arrow_inner{
+    /* ... */
+    position:absolute;
+    bottom:-25px;
+    right:67px;
+    }
+#text{
+    font-size: 1.5vw;
+}  
+.boite{
+    display: flex;
+    justify-content: center;
+}
+.transition{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    top: 80% ;
+    background: url(comic.jpg);
+    background-size: 1024px 200px;
+    max-width: 1024px;
+    max-height: 200px;
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    border: 3px solid black;
+}
+.lien{
+    display: flex;
+    background: white;
+    width:50%;
+    height: 40%;
+    top: 80%;
+    left: 25%;
+    color: black;
+    margin-top: 15px;
+    border: 3px solid black;
+    border-radius: 40% 40%;
+}
+.secondPartHome{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 0;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 130%;
+}
+.descriptionEtJeu{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 75%;
+}
+.bar{
+    margin: 5px 0% 0% 5%;
+    filter: blur(4px);
+    background: url(chez_labbe.png);
+    background-size: 1024px 350px;
+    max-width: 1024px;
+    max-height: 350px;
+    width: 100%;
+    height: 73.5%;
+    color: rgb(236, 204, 22);
+    border: 3px solid black;
+}   
+.jeu{
+    margin-left: 5% 0% 0% 5%;
+    filter: blur(4px);
+    background: url(jeu.jpg);
+    background-position-y: 30%;
+    background-size: 1000px 500px;
+    max-width: 1000px;
+    max-height: 500px;
+    width: 100%;
+    height: 23.5%;
+    border: 3px solid black;
+
+}
+.linkbox{
+    width: 30%;
+    height: 75%;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.carte {
+    margin-top: 5px;
+    filter: blur(4px);
+    background : url(carte.png);
+    background-size: 350px 300px;
+    max-width: 350px;
+    max-height: 300px;
+    width: 100%;
+    height: 48.5%;
+    border: 3px solid black;
+}
+.contactUs {
+    margin-top: 5%;
+    filter: blur(4px);
+    background : url(contact.jpeg);
+    background-size: 500px 350px;
+    max-width: 500px;
+    max-height: 350px;
+    width: 100%;
+    height: 48.5%;
+    border: 3px solid black;
+}
+h1{
+    text-align: center;
+    font-size: 2.5vw;
+}
+h2 {
+    margin-top: 5%;
+    width: 100%;
+    height: 15%;
+    color:rgb(236, 204, 22);
+    text-align: center;
+    font-size: 2.5vw;
+    text-shadow: 1px 1px 1px black;
+}
+button{
+    position: absolute;
+    right:5%;
+    bottom: 5%;
+}
+.bar h2 {
+    margin: 12vh 0 0 10vw;
+    text-align: start;
+} 
+.bar:hover{
+    filter: blur(0px);
+}
+.jeu:hover{
+    filter: blur(0px);
+}
+.contactUs:hover{
+    filter: blur(0px);
+}
+.carte:hover{
+    filter: blur(0px);
+}
+.twikkleStarsmobile{
+    display: none;
+
+}
+footer {
+    margin-left: 0%;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border: none;
+    position: absolute;
+    font-size: 16px;
+    top:230%;    
+    width:100%;
+    height:70px;
+    text-shadow: 1px 2px 15px black;
+  }
+  
+  
+  
+  .logoGithub {
+    position: absolute;  
+    width: 50px;
+    margin-left: 5px;
+    height: 50px;
+  }
+
+footer ul {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}  
+footer ul li {  
+    list-style-type: none;
+}
+footer ul li a {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    color: white;
+}
+footer div {
+    color: white;
+    max-width: 45%;
+    margin-right: 2px;
+}
+@media screen and (max-width : 1024px){
+    .twikkleStars{
+        display: none;
+    }
+    .twikkleStarsmobile{
+        display: block;
+
+    }
+    .lune{
+        border: 1px solid lightgray;
+    }
+    .twikkleStarsmobile .lune{
+        top: 25%;
+        left: 20%;
+    }
+    @keyframes animSun {
+        0%{
+            transform: none;
+            box-shadow: 0em 0em 20px 0.1em white ;
+        }
+        25%{
+            transform: none;
+            box-shadow: 0em 0em 20px 0.3em white ;
+        }    
+        50%{
+            transform: none;
+            box-shadow: 0em 0em 20px 0.1em white ;
+        }
+        75%{
+            transform: none;
+            box-shadow: 0em 0em 20px 0.3em white ;
+        }
+        100%{
+            transform: none;
+            box-shadow: 0em 0em 20px 0.1em white ;
+        }
+    }
+    #bubble{
+        width: 200px;
+        height: 100px;
+        top: 15%;
+        left: 10%;
+    }
+    #bubble #text{
+        font-size: 20px;
+    }
+    @keyframes animBulle {
+        0%{
+            transform: none;
+        }
+        25%{
+            transform: none;
+        }    
+        50%{
+            transform: none;
+        }
+        75%{
+            transform: none;
+        }
+        100%{
+            transform: none;
+        }
+    }    
+    .secondPartHome{
+        height: 1250px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .linkbox{
+        align-items: center;
+        width: 90%;
+        height: 55%;
+        margin:0;
+    }
+    .descriptionEtJeu{
+        width: 90%;
+        height: 40%;
+        margin: 0;
+        align-items: center;
+    }
+    .bar{
+        margin:0;
+        background-position-x:center;
+    }
+    .jeu{
+        margin: 0;
+        background-position-x:center;
+    }
+    .contactUs{
+        margin: 0;
+        background-position-x:center;
+    }
+    .carte{
+        margin: 0;
+        background-position-x:center ;
+    }
+    .bar{
+        filter: blur(0px);
+    }
+    .jeu{
+        filter: blur(0px);
+    }
+    .contactUs{
+        filter: blur(0px);
+    }
+    .carte{
+        filter: blur(0px);
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        top:320%;
+    }
+    footer div{
+        margin-right: 2px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .lien{
+        height: 100px;
+    }
+}
+
+
