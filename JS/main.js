@@ -9,3 +9,19 @@ function ChangeSlide(sens) {
         numero = 0;
     document.getElementById("slide").src = slide[numero];
 }
+
+
+const bouton = document.querySelector('#button');
+
+bouton.addEventListener('click', function () {
+    
+    let txt = document.querySelector("#texte").value;
+    let newCommentaire = document.createElement("li");   
+    newCommentaire.innerHTML = txt;
+    let commentaire = document.querySelector('#commValides');
+    commentaire.appendChild(newCommentaire);  
+    let ancienTxt = document.getElementById("texte").value = "";      
+
+})
+
+
